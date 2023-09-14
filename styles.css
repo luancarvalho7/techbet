@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.fBebas {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.greenSpan {
+    color: #05DE6E
+}
+
+#discFb{
+    font-size: 8px;
+    color: #0c0e13;
+    position: absolute;
+    bottom: 0px;
+}
+
+main p {
+    font-size: 15px;
+}
+
+#logo {
+
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#btnCta {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #3498db;
+    border-radius: 108px 108px 108px 108px;
+    padding: 12px 24px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    animation: pulse-animation 2s infinite;
+    border: none;
+    margin-top: 5px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-image: url('./assets/bgDesktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+main {
+    margin-right: 80px;
+    backdrop-filter: blur(10px);
+
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    border-style: solid;
+    border-color: #05DE6E;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    width: 570px;
+    min-height: 315px;
+}
+
+@media(max-width: 690px) {
+    body {
+        background-image: url('./assets/mobileBG.webp');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 60vh;
+    }
+
+
+    main {
+
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 63% 0% 45% 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+
+        border-style: solid;
+        border-color: #05DE6E;
+        padding: 20px 20px 20px 20px;
+        border-radius: 10px;
+        width: auto;
+        height: auto
+    }
+
+    
+}
+
+
+@keyframes pulse-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background-color: #04bac4;
+
+    }
+
+    50% {
+        transform: scale(1.05);
+        background-color: #00c1cd;
+    }
+}
