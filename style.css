@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+@keyframes zoomIn {
+	from {
+	  transform: scale(1);
+	}
+	to {
+	  transform: scale(1.03);
+	}
+  }
+  
+
+body {
+	background-color: #000000;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	flex-direction: center;
+	background-image: url(/images/background-woman.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10rem 1rem 0 1rem;
+}
+
+
+.boxHeader {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+	background-color: #00000070;
+	backdrop-filter: blur(5px);
+	border-radius: 15px;
+	margin: 1rem 0 1rem 0;
+	padding: 0 1rem 0 1rem;
+}
+
+.boxHeader .logo {
+	width: 90%;
+	margin-top: 1rem;
+}
+
+.boxHeader h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16pt;
+	margin-top: 1rem;
+}
+
+.boxHeader span {
+	color: #FF0000;
+	font-weight: 900;
+}
+
+.boxHeader p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	font-size: 13pt;
+	padding: 0 2rem;
+	margin-top: 1rem;
+}
+
+.boxHeader button {
+	margin-top: 2rem;
+	cursor: pointer;
+}
+
+.imgPgto {
+	margin-top: 1rem;
+	max-width: 120px;
+}
+
+button {
+	font-size: 15pt;
+	font-family: 'Poppins', sans-serif;
+	background-color: #C29C2A;
+	text-transform: uppercase;
+	padding: 1.1rem 1.7rem;
+	color: white;
+	font-weight: 700;
+	border: none;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 71px 7px rgba(194,156,42,0.75);
+	-moz-box-shadow: 0px 0px 71px 7px rgba(194,156,42,0.75);
+	box-shadow: 0px 0px 71px 7px rgba(194,156,42,0.75);
+	animation-name: zoomIn;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.mainContainer {
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.headline {
+	background-color: #292926;
+	max-width: 400px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FF0000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 12pt;
+	padding: 1rem;
+	border-radius: 5px;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+
+h1 {
+	color: #ffffff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudoContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-image: url(/images/background-red.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.conteudoContainer2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-image: url(/images/background-red2.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.conteudoContainer3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.conteudoWidth {
+	max-width: 768px;
+	padding: 0 1rem;
+}
+
+.conteudoContaint {
+	width: 100%;
+	display: flex;
+	background-color: #00000070;
+	backdrop-filter: blur(15px);
+	border-radius: 15px;
+	margin-bottom: 1rem;
+	padding: 2rem 1rem 2rem 1rem;
+	gap: 1rem;
+}
+
+.emoji {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30pt;
+	width: 20%;
+}
+
+.conteudo {
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 13pt;
+	width: 70%;
+}
+
+.conteudo p {
+	text-shadow: 0px 0px 12px #000000;
+}
+
+h3 {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 13pt;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.depoimentos {
+	display: flex;
+}
+
+.depoimentos {
+	margin: auto;
+	max-width: 1000px;
+	overflow-x: auto;
+	margin: 3rem 0;
+}
+
+.depoimentos img {
+	width: 80%;
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+	.slider::-webkit-scrollbar {
+	  width: 0;
+	}
+  }
+
+  .small {
+	font-size: 18pt;
+  }
+
+  .cta {
+	color: #FF0000;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+  }
+
+  .sellBox {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+	background-color: #292926;
+	border-radius: 15px;
+	margin: 3rem 0 3rem 0;
+	padding: 0rem 1rem 2rem 1rem;
+}
+
+.sellBox h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16pt;
+	margin-top: 1rem;
+}
+
+.sellBox span {
+	color: #ffffff;
+	font-weight: 400;
+
+}
+
+.sellBox .desconto {
+	font-family: 'Poppins', sans-serif;
+	color: #7A7A7A;
+	text-align: center;
+	font-size: 17pt;
+	padding: 0 2rem 0 2rem;
+	margin-top: 1rem;
+	text-decoration: line-through;
+}
+
+.sellBox .preco {
+	font-family: 'Poppins', sans-serif;
+	color: #D4A935;
+	text-align: center;
+	font-size: 20pt;
+	padding: 0 2rem;
+	font-weight: 700;
+	margin-top: 1rem;
+}
+
+.sellBox button {
+	margin-top: 2rem;
+	cursor: pointer;
+}
+
+.sellBoxContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0rem 1rem 0 1rem;
+
+}
+
+.ebook {
+	width: 70%;
+}
+
+.logoSell {
+	width: 70%;
+	border-bottom: 1px solid #7a7a7a50;
+	padding-bottom: 1.5rem;
+}
+
+.tag {
+	width: 80%;
+}
+
+.perguntas p {
+	color: #FF0000;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.perguntas h1 {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 22pt;
+}
+
+.faq-container {
+	max-width: 1000px;
+	margin: auto;
+  }
+  
+  .faq {
+	padding: 1rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+  }
+  
+  details {
+	background-color: #DDDDDD;
+	width: 100%;
+	border: 1px solid #000000;
+	cursor: pointer;
+  }
+  
+  summary {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #000000;
+	padding: 0.7rem;
+  }
+  
+  summary::marker,
+  summary::-webkit-details-marker {
+	color: #ff5000;
+  }
+  
+  .reposta {
+	font-family: 'Poppins', sans-serif;
+	text-align: left;
+	color: #000000;
+	padding: 0.7rem;
+	cursor: text;
+	max-width: 100%;
+  }
+  
+  footer {
+	padding-bottom: 3rem;
+  }
+
+  a {
+	color: #ffffff;
+	text-decoration: none;
+  }
